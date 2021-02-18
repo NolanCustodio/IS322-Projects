@@ -1,0 +1,50 @@
+<!DOCTYPE>
+<html>
+	<head>
+
+	</head>
+	<body>
+        <div class="containter" id="pageWrapper">
+
+            <div class="filterWrapper">
+                <div class="formGroup">
+                    <label for="orderBy">Order By</label>
+                    <select id="orderBy" name="orderBy">
+                        <option value="name">Name</option>
+                        <option value="published">Published</option>
+                        <option value="_id">Article ID</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="formGroup">
+                <label for="published">Show Unpublished</label>
+                <select id="published" name="published">
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </select>
+            </div>
+
+            <table id="resutsTable" border="1">
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>Name</th>
+                        <th>Aritcle ID</th>
+                        <th>Published</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                </tbody>
+            </table>
+
+
+
+
+        </div>
+
+        <script type="text/javascript" src="productList.js"></script>
+	</body>
+</html>
