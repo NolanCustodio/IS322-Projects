@@ -11,8 +11,20 @@
 	padding: 5px;
 }
 
+#all-cards {
+    display:flex;
+    flex-wrap: wrap;
+}
 
+/* #my-card {
+    flex: 1 1 200px;
+    border: 1px black solid;
+    max-width: 200px;
+} */
 
+.image {
+    max-width: 490px;
+} 
 
 /* Below is extra credit */
 
