@@ -3,15 +3,15 @@
 
     //Image links cannot be tiny.urls 
     var mockDB = [
-        {_id: '1', name: 'Wooden Hanger', price: '$200', published: true, image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-quO1DzKNljY%2FTbhzulo8g8I%2FAAAAAAAABfU%2FIOFZTBhgazA%2Fs1600%2FWooden-Hanger-for-Clothes-MC010-.jpg&f=1&nofb=1"},
-        {_id: '1', name: 'Wooden Hanger', price: '$200', published: true, image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-quO1DzKNljY%2FTbhzulo8g8I%2FAAAAAAAABfU%2FIOFZTBhgazA%2Fs1600%2FWooden-Hanger-for-Clothes-MC010-.jpg&f=1&nofb=1"},
-        {_id: '1', name: 'Wooden Hanger', price: '$200', published: true, image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-quO1DzKNljY%2FTbhzulo8g8I%2FAAAAAAAABfU%2FIOFZTBhgazA%2Fs1600%2FWooden-Hanger-for-Clothes-MC010-.jpg&f=1&nofb=1"},
-        {_id: '1', name: 'Wooden Hanger', price: '$200', published: true, image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-quO1DzKNljY%2FTbhzulo8g8I%2FAAAAAAAABfU%2FIOFZTBhgazA%2Fs1600%2FWooden-Hanger-for-Clothes-MC010-.jpg&f=1&nofb=1"},
-        {_id: '1', name: 'Wooden Hanger', price: '$200', published: true, image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-quO1DzKNljY%2FTbhzulo8g8I%2FAAAAAAAABfU%2FIOFZTBhgazA%2Fs1600%2FWooden-Hanger-for-Clothes-MC010-.jpg&f=1&nofb=1"},
-        {_id: '1', name: 'Wooden Hanger', price: '$200', published: true, image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-quO1DzKNljY%2FTbhzulo8g8I%2FAAAAAAAABfU%2FIOFZTBhgazA%2Fs1600%2FWooden-Hanger-for-Clothes-MC010-.jpg&f=1&nofb=1"},
-        {_id: '1', name: 'Wooden Hanger', price: '$200', published: true, image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-quO1DzKNljY%2FTbhzulo8g8I%2FAAAAAAAABfU%2FIOFZTBhgazA%2Fs1600%2FWooden-Hanger-for-Clothes-MC010-.jpg&f=1&nofb=1"},
-        {_id: '2', name: 'Nice Hanger', price: '$300', published: true, image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-quO1DzKNljY%2FTbhzulo8g8I%2FAAAAAAAABfU%2FIOFZTBhgazA%2Fs1600%2FWooden-Hanger-for-Clothes-MC010-.jpg&f=1&nofb=1"}
-
+        {_id: '1', name: 'Wooden Pencil', price: '200', type: 'pencil', image: "https://images.pexels.com/photos/159752/pencil-office-design-creative-159752.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"},
+        {_id: '2', name: 'Used Pencil', price: '23',  type: 'pencil', image: "https://images.pexels.com/photos/114119/pexels-photo-114119.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"},
+        {_id: '3', name: 'Mechanical Pencil', price: '2',  type: 'pencil', image: "https://images.pexels.com/photos/159585/stationery-pencil-mechanical-pencil-simple-159585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"},
+        {_id: '4', name: 'Colored Pencil', price: '60',  type: 'pencil', image: "https://images.pexels.com/photos/194098/pexels-photo-194098.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"},
+        {_id: '5', name: 'Fancy Pencil', price: '50',  type: 'pencil', image: "https://images.pexels.com/photos/745759/pexels-photo-745759.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"},
+        {_id: '6', name: 'Ballpoint Pen', price: '8',  type: 'pen', image: "https://images.pexels.com/photos/867482/pexels-photo-867482.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"},
+        {_id: '7', name: 'Fountain Pen', price: '500',  type: 'pen', image: "https://images.pexels.com/photos/356372/pexels-photo-356372.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"},
+        {_id: '8', name: 'Markers', price: '23',  type: 'markers', image: "https://images.pexels.com/photos/1152665/pexels-photo-1152665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"},
+       
 
         // { _id: '123', name: 'Article 1', published: true },
 		// { _id: '583', name: 'Article 2', published: true },
@@ -24,23 +24,6 @@
 		// { _id: '734', name: 'Article 9', published: true },
     ];
 
-    function renderList(results) {
-        var tableBody = document.querySelector('#results-table tbody');
-
-        tableBody.innerHTML = '';
-
-        var tableRows = results.map(function (result, index) {
-            return '<tr class="wow"><td>' + index + '</td><td>' + result.name + '</td><td>' + 
-            result._id + '</td><td>' + result.published + '</td></tr>';
-        });
-
-        tableRows.forEach(function (row){
-            tableBody.innerHTML += row;
-        });
-    }
-
-    // renderList(mockDB);
-
     function renderCards(results) {
         var products = document.querySelector('#all-cards');
 
@@ -48,9 +31,9 @@
 
         //The link for image sources need to be link to direct images on the internet
         var cards = results.map(function (result, index) {
-            return '<div class="card d-flex"> <image class="image" src=' + result.image + 
-            '<div class="card-body"><p class="name">' + result.name + 
-            '</p><p class="price">' + result.price + '</p></div></div>'
+            return '<div class="card d-flex my-card"> <image class="image" src=' + result.image + 
+            '><div class="card-body"><p class="name">' + result.name + 
+            '</p><p class="price">$' + result.price + '</p></div></div>'
         });
 
         cards.forEach(function (row) {
@@ -74,25 +57,32 @@
                 }
             }):
             mockDB.sort(function (a,b) {
-                returna[sortValue] - b[sortValue];
+                return a[sortValue] - b[sortValue];
             });
-        renderList(sortedResults);
+        renderCards(sortedResults);
     }
 
     document.querySelector('#orderBy').addEventListener('change', function(event) {
-        orderBy(event,target,value);
+        orderBy(event.target.value);
     });
 
-    function togglePublished(showPublished) {
+    function toggleType(value) {
         var filteredResults = mockDB.filter(function (result) {
-            return showPublished || result.published;
+            var isType = false;
+
+            if (value == 'all') {
+                isType = true;
+            }else if (result.type == value) {
+                isType = true;
+            }
+            return isType;
         });
-        renderList(filteredResults);
+        renderCards(filteredResults);
     }
 
-    document.querySelector('#published').addEventListener('change', function(event) {
-        var value = event.target.value === 'true';
-        togglePublished(value);
+    document.querySelector('#type').addEventListener('change', function(event) {
+        var value = event.target.value;
+        toggleType(value);
     })
 
 })();

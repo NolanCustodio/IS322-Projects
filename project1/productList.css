@@ -1,43 +1,91 @@
-.filter-wrapper {
+/* Default / Large Desktop  >1366px */
+
+.container {
     display: flex;
-    margin: 10px 0;
 }
 
-#results-table {
-    width: 100%;
+.filter-wrapper {
+    background-color: lightslategray;
 }
 
-#results-table td, #results-table th {
-	padding: 5px;
+.form-group {
+    display: inline-block;
+    padding: 10px;
+    font-size: 15;
 }
 
 #all-cards {
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-/* #my-card {
-    flex: 1 1 200px;
+.card-body {
+    padding: 10px;
+    background-color: lightgray;
+}
+
+.my-card {
     border: 1px black solid;
-    max-width: 200px;
-} */
+    max-width: 200 px;
+    flex: 0 0 200px;
+    margin: 10px;
+    padding: 10px;
+}
 
 .image {
-    max-width: 490px;
+    width: 100%;
+    max-height: 70%;
 } 
-
-/* Below is extra credit */
-
-/* Default / Large Desktop  >1366px */
-
-
 
 
 /* Small Desktop <1024px */
+@media only screen and (max-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
-
-/* Tablet <760px */
-
+/* Tablet <769px */
+@media only screen and (min-width: 412px) and (max-width: 768px) {
+    .my-card {
+        border: 1px black solid;
+        max-width: 200 px;
+        flex: 0 0 300px;
+        margin: 10px;
+        padding: 10px;
+    }
+}
 
 /* phone <411px */
+@media only screen and (max-width: 411px) {
+    .my-card {
+        border: 1px black solid;
+        display: flex;
+        flex: 0 0 100%;
+        margin: 10px;
+        padding: 10px;
+    }
 
+    .image {
+        width: 30%;
+        max-height: 100%;
+    } 
+
+    .card-body {
+        padding: 10px;
+        background-color: lightgray;
+        height: 100%;
+        width: 75%;
+        display: flex;
+    }
+
+    .name {
+        padding: 10px;
+    }
+
+    .price {
+        padding: 10px;
+    }
+}
